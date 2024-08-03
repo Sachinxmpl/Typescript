@@ -15,8 +15,8 @@
 
 
 //!Rest opreator 
-const addNumbers = (...m:Array<number|string>):void=>{
-    console.log(m)
-}
+// const addNumbers = (...m:Array<number|string>):void=>{
+//     console.log(m)
+// }
 
-addNumbers(1,2,3,4,5,3,4,"sachin","is","a","good","boy")
+// addNumbers(1,2,3,4,5,3,4,"sachin","is","a","good","boy")
