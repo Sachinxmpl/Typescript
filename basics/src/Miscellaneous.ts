@@ -18,7 +18,7 @@ function keepProcessing(): never {
 //* 1 void type can have null or undefined as value but never cannot 
 
 let something: void = null;
-let nothing: never = null; // Error: Type 'null' is not assignable to type 'never'
+// let nothing: never = null; // Error: Type 'null' is not assignable to type 'never'
 
 
 //! void returns undefined wheres never caused compile time error 
@@ -30,3 +30,6 @@ let speech: void = sayHi();
 console.log(speech); // undefined
 
 //speech is undefined, because the sayHi function internally returns undefined even if return type is void. If you use never type, speech:never will give a compile time error, as void is not assignable to never.
+
+
+export {}
