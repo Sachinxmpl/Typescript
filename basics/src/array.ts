@@ -1,4 +1,4 @@
-//? Type script in  array 
+//? Type script in  array
 // const arr:number[] = [1,2,3,4]
 // const arr2:string[] = ['a','b','c']
 
@@ -7,12 +7,9 @@
 // const arr4:arraySchema=['1','2','3']
 // const arrayDefination:arraySchema = "This is array defination"
 
-
-
-//? a different way 
+//? a different way
 // const sampleArray:Array<number>=[1,2,3,4]
 // const sampleArray2:Array<number|string>=["sachin",1,"hari",3]
-
 
 // const sampleArray3:Array<boolean>=new Array(true,false)
 // console.log(sampleArray3)
@@ -22,3 +19,9 @@
 // newArray.forEach(i=>{
 //     console.log(i  , i.length)
 // })
+
+//?
+
+const heros: Array<string> = ["schin", "ironaman", "hi"];
+heros.map((hero) : string=> `${hero}+1`)  //hero is already detected as string 
+
