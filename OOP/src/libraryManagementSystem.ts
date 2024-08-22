@@ -1,0 +1,4 @@
+interface LibraryItem {
+    getDetails() : string ; 
+}
+
