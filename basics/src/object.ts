@@ -33,25 +33,39 @@
 //!Interface keyword in typescript 
 //* interface allows us to use the extend property , so we use interface and inside that type 
 
-// type functionSchema = (a : number) => void ; 
+type functionSchema = (a : number) => void ; 
 
-// interface livingThingsSchema{
-//         age : number , 
-//         func : functionSchema 
-// }
+interface livingThingsSchema{
+        age : number , 
+        func : functionSchema 
+}
 
-// interface humanSchema extends livingThingsSchema{
-//     name : string ,
-//     gender? : boolean ,
-//     isMarried?: boolean
-// }
+interface humanSchema extends livingThingsSchema{
+    name : string ,
+    gender? : boolean ,
+    isMarried?: boolean
+}
 
-// const sampleHuman : humanSchema = {
-//     name : "sachin" , 
-//     age : 10 , 
-//     func : (a=10)=>{
-//         console.log(a)
-//     }
-// }
+const sampleHuman : humanSchema = {
+    name : "sachin" , 
+    age : 10 , 
+    func : (a=10)=>{
+        console.log(a)
+    }
+}
 // console.log(sampleHuman)
 // sampleHuman.func(12)
+
+
+
+//! Mixing two or more types but not good practise
+type cardNumber = {
+    cardnumber : string 
+}
+type cardDate = {
+    cardDate : string 
+}
+type cardDetails = cardDate & cardNumber & {
+    cvv : number ,
+    readonly id : number 
+}
