@@ -1,2 +1,7 @@
-const name : string = "sachin"
-console.log(name)
+let greetings : string = "hello hitesh"
+console.log(greetings)
+
+greetings.toLowerCase()
+
+
+export {}
