@@ -3,6 +3,9 @@
 
 //* Setter is a method that  is used to update or modify the value of a private or protected property.
 
+//!!!! we cannot call getters or setter functions , we dont need to just access them as the normal object key value pairs 
+
+
 interface PersonSchema {
   firstname: string;
   lastname: string;
@@ -40,6 +43,8 @@ const person1 = new Person("sachin", "kumar", 30);
 console.log(person1.fullname);
 
 person1.settoken = "thisissecrettoken"
+
+// console.log(person1.gettoken()) cannot call the getter function
 console.log(person1.gettoken)
 
 
