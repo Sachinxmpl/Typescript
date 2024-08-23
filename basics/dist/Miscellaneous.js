@@ -9,13 +9,25 @@ function keepProcessing() {
         console.log('I always does something and never ends.');
     }
 }
-//? Void vs never 
-//* 1 void type can have null or undefined as value but never cannot 
-let something = null;
-// let nothing: never = null; // Error: Type 'null' is not assignable to type 'never'
-//! void returns undefined wheres never caused compile time error 
-function sayHi() {
-    console.log('Hi!');
-}
-let speech = sayHi();
-console.log(speech); // undefined
+const person = {
+    name: "sachin",
+    age: "23"
+};
+const getData = (key) => {
+    return person[key];
+};
+console.log(getData("name"));
+const shamsher = {
+    name: "shamsher",
+    email: "shamsher@gmail.com"
+};
+//shows no error 
+// const key = "name"
+// console.log(shamsher[key])
+//shows error as key can be anything 
+// let key = "name"
+// console.log(shamsher[key])
+//? to solve this error we use keyof operator 
+let key = "name";
+console.log(shamsher[key]);
+console.log(shamsher[key]);
