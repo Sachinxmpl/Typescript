@@ -27,8 +27,7 @@ form.onsubmit=(e)=>{
 
 //*
 interface User{
-   [key:string] : string ,
-   
+   [key:string] : string ,  
 }
 
 const person : User={
