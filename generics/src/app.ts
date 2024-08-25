@@ -58,12 +58,21 @@
 
 
 // //* Using multiple generics 
+const sample = <T , U extends {name : string , age : number}>(status : T , details : U) =>{
+        return [status , details]
+}
 
-// const sample = <T,U>(n:T,m:U) : [T,U] =>{
-//     return [n,m]
-// }
-// const ans = sample<string,number>("sachin",10)
-
+type Details = {
+    name : string , 
+    age : number , 
+    readonly id : number
+}
+const person : Details = {
+    name : "sachin" , 
+    age : 30 , 
+    id : 12
+}
+console.log(sample<boolean , Details>(false ,person ))
 
 
 //* Example 3

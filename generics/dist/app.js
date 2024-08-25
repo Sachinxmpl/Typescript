@@ -35,10 +35,15 @@
 // const arr1:number[] = [3,4,5]
 // const arr: Array<number> = [1,2,3,4,5]  //using generics 
 // //* Using multiple generics 
-// const sample = <T,U>(n:T,m:U) : [T,U] =>{
-//     return [n,m]
-// }
-// const ans = sample<string,number>("sachin",10)
+const sample = (status, details) => {
+    return [status, details];
+};
+const person = {
+    name: "sachin",
+    age: 30,
+    id: 12
+};
+console.log(sample(false, person));
 //* Example 3
 // type studentSchema1 = {
 //     name : string , 
